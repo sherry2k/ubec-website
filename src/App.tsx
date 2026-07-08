@@ -7,6 +7,7 @@ import Projects from '@/components/Projects';
 import Application from '@/components/Application';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Process from '@/components/Process';
+import SiteSupervision from '@/components/SiteSupervision';
 import Testimonials from '@/components/Testimonials';
 import Partners from '@/components/Partners';
 import Blog from '@/components/Blog';
@@ -26,6 +27,7 @@ export default function App() {
         <Application />
         <WhyChooseUs />
         <Process />
+        <SiteSupervision />
         <Testimonials />
         <Partners />
         <Blog />
