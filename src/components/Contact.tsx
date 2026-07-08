@@ -18,7 +18,7 @@ const COMPANY_INFO = {
   emails: ['ubec27530@gmail.com'],
   hours: ['Sun–Thu: 9:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
   whatsapp: '971502753085', // Number without + or spaces
-  googleMapEmbed: '<iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.976707319262!2d54.3760259759128!3d24.45938666118818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67c6c53963b9%3A0xc0cd3c6978682d1f!2suniversal%20building%20engineering%20consultants!5e1!3m2!1sen!2sae!4v1783513489291!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"',
+  googleMapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.976707319262!2d54.3760259759128!3d24.45938666118818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67c6c53963b9%3A0xc0cd3c6978682d1f!2suniversal%20building%20engineering%20consultants!5e1!3m2!1sen!2sae!4v1783513489291!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
 };
 
 // ============================================================
