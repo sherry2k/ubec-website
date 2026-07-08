@@ -25,22 +25,22 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Abu Dhabi, United Arab Emirates', 'Office 123, Business Tower'],
+      details: ['Abu Dhabi, United Arab Emirates', 'Office #4 , SJ Tower, Airport Road'],
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+971 XX XXX XXXX', '+971 XX XXX XXXX'],
+      details: ['+971 2 6717121', '+971 50 275 3085'],
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@ubec.ae', 'projects@ubec.ae'],
+      details: ['ubec27530@gmail.com', 'projects@ubec.ae'],
     },
     {
       icon: Clock,
       title: 'Working Hours',
-      details: ['Sun–Thu: 8:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
+      details: ['Sun–Thu: 9:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
     },
   ];
 
