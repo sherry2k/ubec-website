@@ -3,9 +3,20 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2 } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
+// ============================================================
+// ⚙️ CONFIGURATION — UPDATE THESE WITH YOUR REAL DETAILS
+// ============================================================
+
+// 1. Get your free access key from https://web3forms.com
+//    Enter the email where you want to RECEIVE form submissions
+const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
+
+// ============================================================
+
 export default function Contact() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation(0.1);
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,16 +24,43 @@ export default function Contact() {
     service: '',
     message: '',
   });
-// 1. Get your free access key from https://web3forms.com
-//    Enter the email where you want to RECEIVE form submissions
-const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
-   {
-    e.preventDefault();
-    setFormSubmitted(true);
-    setTimeout(() => setFormSubmitted(false), 4000);
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-  };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormStatus('sending');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New UBEC Inquiry from ${formData.name}`,
+          from_name: 'UBEC Website',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+        setTimeout(() => setFormStatus('idle'), 5000);
+      } else {
+        setFormStatus('error');
+        setErrorMessage('Something went wrong. Please try again or contact us directly.');
+      }
+    } catch {
+      setFormStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
+    }
+  };
   const contactInfo = [
     {
       icon: MapPin,
