@@ -86,7 +86,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'MEP'],
     status: 'Completed',
     image: IMAGES.commercial1,
-    featured: true,
+    featured: false,
   },
   {
     title: 'Modern Private Villa',
@@ -108,11 +108,11 @@ export const PROJECTS = [
   },
    {
     title: 'Private Villa',
-    location: 'Madinat Al Riyad, UAE',
+    location: 'Al Shawamekh, UAE',
     type: 'Residential Villa',
     services: ['Architectural Design', 'Structural', 'Site Supervision','MEP'],
     status: 'In Progress',
-    image: IMAGES.villa4,
+    image: IMAGES.villa3,
     featured: true,
   },
    {
