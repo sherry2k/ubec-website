@@ -2,7 +2,7 @@ export const IMAGES = {
   hero: 'https://images.pexels.com/photos/36145985/pexels-photo-36145985.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   skyline2: 'https://images.pexels.com/photos/34218532/pexels-photo-34218532.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   skyline3: 'https://images.pexels.com/photos/36148468/pexels-photo-36148468.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-  villa1: 'https://images.pexels.com/photos/7031600/pexels-photo-7031600.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+  villa1: '/images/projects/villa-1.jpg',
   villa2: 'https://images.pexels.com/photos/7031598/pexels-photo-7031598.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   villa3: 'https://images.pexels.com/photos/7031602/pexels-photo-7031602.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   commercial1: 'https://images.pexels.com/photos/2606383/pexels-photo-2606383.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
