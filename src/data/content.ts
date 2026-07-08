@@ -81,7 +81,7 @@ export const PROJECTS = [
     type: 'Commercial Tower',
     services: ['Architectural Design', 'Structural Engineering', 'MEP'],
     status: 'Completed',
-    image: IMAGES.commercial1,
+    image: IMAGES.villa1,
     featured: true,
   },
   {
@@ -90,7 +90,7 @@ export const PROJECTS = [
     type: 'Luxury Villa',
     services: ['Architectural Design', 'Interior Design', 'MEP'],
     status: 'Completed',
-    image: IMAGES.villa1,
+    image: IMAGES.villa2,
     featured: true,
   },
   {
@@ -324,7 +324,9 @@ export const PARTNERS = [
   'ADDC',
   'Etisalat',
   'ADNOC',
-  ];
+  'SEDD',
+  'Ajman Municipality',
+];
 
 export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -334,6 +336,5 @@ export const NAV_LINKS = [
   { label: 'Projects', href: '#projects' },
   { label: 'Application', href: '#application' },
   { label: 'Process', href: '#process' },
-  { label: 'Insights', href: '#insights' },
   { label: 'Contact', href: '#contact' },
 ];
