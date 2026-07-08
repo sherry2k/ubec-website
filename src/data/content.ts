@@ -95,7 +95,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'Interior Design', 'Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa1,
-    featured: true,
+    featured: false,
   },
    {
     title: 'Modern Private Villa',
@@ -104,7 +104,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'BIM Modeling','Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa2,
-    featured: true,
+    featured: false,
   },
    {
     title: 'Private Villa',
@@ -113,7 +113,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'Structural', 'Site Supervision','MEP'],
     status: 'In Progress',
     image: IMAGES.villa3,
-    featured: true,
+    featured: false,
   },
    {
     title: 'Khalifa City Mosque',
