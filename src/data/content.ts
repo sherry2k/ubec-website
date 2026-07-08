@@ -170,9 +170,9 @@ export const TENDERS = [
     title: 'Residential Villa G+2',
     location: 'Madinat Riyad, Abu Dhabi',
     submissionDate: '2026-03-10',
-    description: 'New construction of a G+2 residential building with 20 apartments, parking, and amenities.',
+    description: 'New construction of a G+2 residential building with boundarywall.',
     drawingsLink: 'https://www.youtube.com/',
-    image: IMAGES.skyline2,
+    image: IMAGES.villa2,
   },
 ];
 
