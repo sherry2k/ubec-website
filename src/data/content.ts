@@ -151,27 +151,27 @@ export const PROJECTS = [
 
 export const TENDERS = [
   {
-    title: 'Villa G+1 — Al Shamkha',
+    title: 'Villa G+2 — Al Shamkha',
     location: 'Al Shamkha, Abu Dhabi',
     submissionDate: '2026-02-15',
     description: 'Construction of a G+1 luxury villa with modern architectural design, landscaping, and boundary wall works.',
-    drawingsLink: '#',
+    drawingsLink: 'https://www.youtube.com/',
     image: IMAGES.villa3,
   },
   {
-    title: 'Commercial Showroom — Mussafah',
-    location: 'Mussafah Industrial, Abu Dhabi',
+    title: 'Residential Villa G+2',
+    location: 'Madinat Riyad, Abu Dhabi',
     submissionDate: '2026-02-28',
     description: 'Fit-out and construction of a 2-floor commercial showroom with MEP systems and fire protection.',
-    drawingsLink: '#',
+    drawingsLink: 'https://www.youtube.com/',
     image: IMAGES.commercial3,
   },
   {
-    title: 'Residential Building G+4 — Al Reef',
-    location: 'Al Reef, Abu Dhabi',
+    title: 'Residential Villa G+2',
+    location: 'Madinat Riyad, Abu Dhabi',
     submissionDate: '2026-03-10',
-    description: 'New construction of a G+4 residential building with 20 apartments, parking, and amenities.',
-    drawingsLink: '#',
+    description: 'New construction of a G+2 residential building with 20 apartments, parking, and amenities.',
+    drawingsLink: 'https://www.youtube.com/',
     image: IMAGES.skyline2,
   },
 ];
