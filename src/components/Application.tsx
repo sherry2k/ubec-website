@@ -8,8 +8,8 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const APP_CONFIG = {
   // Replace with your actual App Store & Play Store links
-  appStoreLink: 'https://apps.apple.com/app/your-app-id',
-  playStoreLink: 'https://play.google.com/store/apps/details?id=your.app.id',
+  appStoreLink: 'https://apps.apple.com/us/app/universal-consultant/id6745930257,
+  playStoreLink: 'https://consys.me/download.php?app=android_ubec',
 
   // Replace with your actual app screenshot images
   // Upload to public/images/ folder and use paths like '/images/app-screen-1.png'
