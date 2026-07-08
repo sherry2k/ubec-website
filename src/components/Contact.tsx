@@ -3,20 +3,9 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2 } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-// ============================================================
-// ⚙️ CONFIGURATION — UPDATE THESE WITH YOUR REAL DETAILS
-// ============================================================
-
-// 1. Get your free access key from https://web3forms.com
-//    Enter the email where you want to RECEIVE form submissions
-const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
-
-// ============================================================
-
 export default function Contact() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation(0.1);
-  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,62 +14,33 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormStatus('sending');
-    setErrorMessage('');
-
-    try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `New UBEC Inquiry from ${formData.name}`,
-          from_name: 'UBEC Website',
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          service: formData.service,
-          message: formData.message,
-        }),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setFormStatus('success');
-        setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-        setTimeout(() => setFormStatus('idle'), 5000);
-      } else {
-        setFormStatus('error');
-        setErrorMessage('Something went wrong. Please try again or contact us directly.');
-      }
-    } catch {
-      setFormStatus('error');
-      setErrorMessage('Network error. Please check your connection and try again.');
-    }
+    setFormSubmitted(true);
+    setTimeout(() => setFormSubmitted(false), 4000);
+    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
   };
+
   const contactInfo = [
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Abu Dhabi, United Arab Emirates', 'Office #406 , SJ Tower, Airport Road'],
+      details: ['Abu Dhabi, United Arab Emirates', 'Office 123, Business Tower'],
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+971 2 6717121', '+971 50 275 3085'],
+      details: ['+971 XX XXX XXXX', '+971 XX XXX XXXX'],
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['ubec27530@gmail.com'],
+      details: ['info@ubec.ae', 'projects@ubec.ae'],
     },
     {
       icon: Clock,
       title: 'Working Hours',
-      details: ['Sun–Thu: 9:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
+      details: ['Sun–Thu: 8:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
     },
   ];
 
@@ -145,7 +105,7 @@ export default function Contact() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/971502753085"
+              href="https://wa.me/971000000000"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-4 bg-[#25D366] text-white font-semibold rounded-2xl hover:bg-[#20BD5A] transition-all shadow-lg shadow-[#25D366]/20"
@@ -156,8 +116,8 @@ export default function Contact() {
 
             {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-border/40 h-48">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.9891326894885!2d54.37756336821889!3d24.459023354077484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67c6c53963b9%3A0xc0cd3c6978682d1f!2suniversal%20building%20engineering%20consultants!5e1!3m2!1sen!2sae!4v1783504146241!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.1610963!2d54.2471!3d24.4539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc1b301a2e1d4bf0!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
