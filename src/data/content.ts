@@ -43,7 +43,7 @@ export const SERVICES = [
     icon: 'ClipboardList',
   },
   {
-    title: 'Construction Supervision',
+    title: 'Site Supervision',
     description: 'Rigorous on-site supervision ensuring construction quality, safety compliance, and adherence to approved designs and specifications.',
     icon: 'HardHat',
   },
@@ -318,14 +318,15 @@ export const BLOG_POSTS = [
 export const PARTNERS = [
   'Abu Dhabi Municipality',
   'Dubai Municipality',
+  'ALDAR',
   'DMT',
   'Civil Defense',
   'TAQA',
-  'ADDC',
+  'ITC',
   'Etisalat',
   'ADNOC',
-  'SEDD',
-  'Ajman Municipality',
+  
+  
 ];
 
 export const NAV_LINKS = [
