@@ -1,7 +1,7 @@
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/36145985/pexels-photo-36145985.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   skyline2: 'https://images.pexels.com/photos/34218532/pexels-photo-34218532.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-  skyline3: '/images/projects/tower-2.jpg,
+  skyline3: '/images/projects/tower-2.jpg',
   villa1: '/images/projects/villa-1.jpg',
   villa2: '/images/projects/villa-2.jpg',
   villa3: '/images/projects/villa-3.jpg',
