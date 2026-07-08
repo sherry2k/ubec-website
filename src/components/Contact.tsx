@@ -13,7 +13,7 @@ const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
 
 // 2. Your contact details
 const COMPANY_INFO = {
-  address: ['Abu Dhabi, United Arab Emirates', 'Office 123, Business Tower'],
+  address: ['Abu Dhabi, United Arab Emirates', 'Office# 406, SJ Tower, Airport Road'],
   phones: ['+971 2 671 7121 ', '+971 50 275 3085'],
   emails: ['ubec27530@gmail.com'],
   hours: ['Sun–Thu: 9:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
