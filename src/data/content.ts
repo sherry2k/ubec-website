@@ -11,7 +11,7 @@ export const IMAGES = {
   engineers1: 'https://images.pexels.com/photos/8961146/pexels-photo-8961146.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   engineers2: 'https://images.pexels.com/photos/8482865/pexels-photo-8482865.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
   engineers3: 'https://images.pexels.com/photos/8961065/pexels-photo-8961065.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-  mosque1: '/images/projects/mosque-1.jpg,
+  mosque1: '/images/projects/mosque-1.jpg',
   interior1: '/images/projects/interior-1.jpg',
   industrial1: '/images/projects/industrial-1.jpg',
 };
