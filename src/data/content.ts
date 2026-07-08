@@ -324,9 +324,7 @@ export const PARTNERS = [
   'ADDC',
   'Etisalat',
   'ADNOC',
-  'SEDD',
-  'Ajman Municipality',
-];
+  ];
 
 export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
