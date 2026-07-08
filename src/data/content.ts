@@ -82,7 +82,7 @@ export const PROJECTS = [
   {
     title: 'Khalidiya Tower',
     location: 'Abu Dhabi, UAE',
-    type: 'Commercial & Residential Tower',
+    type: 'Commercial Tower',
     services: ['Architectural Design', 'MEP'],
     status: 'Completed',
     image: IMAGES.commercial1,
@@ -91,7 +91,7 @@ export const PROJECTS = [
   {
     title: 'Modern Private Villa',
     location: 'Madinat Riyad, Abu Dhabi, UAE',
-    type: 'Modern Villa',
+    type: 'MResidential Villa',
     services: ['Architectural Design', 'Interior Design', 'Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa1,
@@ -101,9 +101,18 @@ export const PROJECTS = [
     title: 'Modern Private Villa',
     location: 'Madinat Al Riyad, UAE',
     type: 'Residential Villa',
-    services: ['Architectural Design', 'BIM Modeling', 'MEP'],
+    services: ['Architectural Design', 'BIM Modeling','Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa2,
+    featured: true,
+  },
+   {
+    title: 'Private Villa',
+    location: 'Madinat Al Riyad, UAE',
+    type: 'Residential Villa',
+    services: ['Architectural Design', 'Structural', 'Site Supervision','MEP'],
+    status: 'In Progress',
+    image: IMAGES.villa4,
     featured: true,
   },
    {
