@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Tenders from '@/components/Tenders';
 import Projects from '@/components/Projects';
+import Application from '@/components/Application';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
@@ -22,6 +23,7 @@ export default function App() {
         <Services />
         <Tenders />
         <Projects />
+        <Application />
         <WhyChooseUs />
         <Process />
         <Testimonials />
