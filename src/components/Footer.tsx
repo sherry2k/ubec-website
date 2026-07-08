@@ -70,7 +70,7 @@ export default function Footer() {
               href="#contact"
               className="shrink-0 px-8 py-4 bg-white text-brand font-bold rounded-2xl hover:bg-white/90 transition-all text-sm"
             >
-              Get Free Consultation
+              Get Free Proposal
             </a>
           </div>
         </motion.div>
@@ -145,11 +145,11 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-brand mt-0.5 shrink-0" />
-                <span className="text-white/40 text-sm">+971 XX XXX XXXX</span>
+                <span className="text-white/40 text-sm">+971 2 6717121</span>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-brand mt-0.5 shrink-0" />
-                <span className="text-white/40 text-sm">info@ubec.ae</span>
+                <span className="text-white/40 text-sm">ubec27530@gmail.com</span>
               </div>
             </div>
           </div>
