@@ -55,14 +55,7 @@ function TenderCard({ tender, index }: { tender: typeof TENDERS[0]; index: numbe
             <FileText className="w-4 h-4" />
             Download Drawings
           </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-charcoal/5 text-charcoal text-sm font-semibold rounded-xl hover:bg-charcoal/10 transition-all"
-          >
-            <ExternalLink className="w-4 h-4" />
-            Submit Bid
-          </a>
-        </div>
+                  </div>
       </div>
     </motion.div>
   );
