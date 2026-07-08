@@ -53,10 +53,12 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="#home" onClick={() => handleNavClick('#home')} className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-                UB
-              </div>
+<a href="#home" onClick={() => handleNavClick('#home')} className="flex items-center gap-3 group">
+  <img 
+    src="/images/logo.png" 
+    alt="UBEC Logo" 
+    className="h-12 w-auto group-hover:scale-105 transition-transform"
+  />
               <div className="hidden sm:block">
                 <div className={`text-sm font-bold leading-tight tracking-tight transition-colors ${isScrolled ? 'text-charcoal' : 'text-white'}`}>
                   Universal Building
@@ -94,7 +96,7 @@ export default function Header() {
             {/* CTA + Mobile Toggle */}
             <div className="flex items-center gap-3">
               <a
-                href="tel:+971000000000"
+                href="tel:+971502753085"
                 className={`hidden md:flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-medium transition-all ${
                   isScrolled
                     ? 'text-charcoal hover:text-brand'
@@ -102,7 +104,7 @@ export default function Header() {
                 }`}
               >
                 <Phone className="w-3.5 h-3.5" />
-                +971 XX XXX XXXX
+                +971 50 2753085
               </a>
               <button
                 onClick={() => handleNavClick('#contact')}
