@@ -164,7 +164,7 @@ export const TENDERS = [
     submissionDate: '2026-02-28',
     description: 'Fit-out and construction of a 2-floor commercial showroom with MEP systems and fire protection.',
     drawingsLink: 'https://www.youtube.com/',
-    image: IMAGES.commercial3,
+    image: IMAGES.villa1,
   },
   {
     title: 'Residential Villa G+2',
