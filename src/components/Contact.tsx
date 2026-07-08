@@ -13,9 +13,10 @@ export default function Contact() {
     service: '',
     message: '',
   });
-
-  const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
-//   => {
+// 1. Get your free access key from https://web3forms.com
+//    Enter the email where you want to RECEIVE form submissions
+const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
+   {
     e.preventDefault();
     setFormSubmitted(true);
     setTimeout(() => setFormSubmitted(false), 4000);
