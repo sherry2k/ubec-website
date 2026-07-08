@@ -25,7 +25,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Abu Dhabi, United Arab Emirates', 'Office #4 , SJ Tower, Airport Road'],
+      details: ['Abu Dhabi, United Arab Emirates', 'Office #406 , SJ Tower, Airport Road'],
     },
     {
       icon: Phone,
@@ -35,7 +35,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['ubec27530@gmail.com', 'projects@ubec.ae'],
+      details: ['ubec27530@gmail.com'],
     },
     {
       icon: Clock,
@@ -105,7 +105,7 @@ export default function Contact() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/971000000000"
+              href="https://wa.me/971502753085"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-4 bg-[#25D366] text-white font-semibold rounded-2xl hover:bg-[#20BD5A] transition-all shadow-lg shadow-[#25D366]/20"
@@ -117,7 +117,7 @@ export default function Contact() {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-border/40 h-48">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.1610963!2d54.2471!3d24.4539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc1b301a2e1d4bf0!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                src="https://www.google.com/maps/place/universal+building+engineering+consultants/@24.4590234,54.3775634,989m/data=!3m1!1e3!4m6!3m5!1s0x3e5e67c6c53963b9:0xc0cd3c6978682d1f!8m2!3d24.4593818!4d54.3786009!16s%2Fg%2F11fnsgzv1r?entry=ttu&g_ep=EgoyMDI2MDcwNS4wIKXMDSoASAFQAw%3D%3D"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
