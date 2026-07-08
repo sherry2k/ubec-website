@@ -14,11 +14,11 @@ const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
 // 2. Your contact details
 const COMPANY_INFO = {
   address: ['Abu Dhabi, United Arab Emirates', 'Office 123, Business Tower'],
-  phones: ['+971 XX XXX XXXX', '+971 XX XXX XXXX'],
-  emails: ['info@ubec.ae', 'projects@ubec.ae'],
-  hours: ['Sun–Thu: 8:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
-  whatsapp: '971000000000', // Number without + or spaces
-  googleMapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.1610963!2d54.2471!3d24.4539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc1b301a2e1d4bf0!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae',
+  phones: ['+971 2 671 7121 ', '+971 50 275 3085'],
+  emails: ['ubec27530@gmail.com'],
+  hours: ['Sun–Thu: 9:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
+  whatsapp: '971502753085', // Number without + or spaces
+  googleMapEmbed: '<iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.976707319262!2d54.3760259759128!3d24.45938666118818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67c6c53963b9%3A0xc0cd3c6978682d1f!2suniversal%20building%20engineering%20consultants!5e1!3m2!1sen!2sae!4v1783513489291!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"',
 };
 
 // ============================================================
