@@ -13,9 +13,9 @@ export default function Contact() {
     service: '',
     message: '',
   });
-const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
-//  
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
+//   => {
     e.preventDefault();
     setFormSubmitted(true);
     setTimeout(() => setFormSubmitted(false), 4000);
