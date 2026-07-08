@@ -14,6 +14,9 @@ export const IMAGES = {
   mosque1: '/images/projects/mosque-1.jpg',
   interior1: '/images/projects/interior-1.jpg',
   industrial1: '/images/projects/industrial-1.jpg',
+  tender1: '/images/projects/tender-1.jpg',
+  tender2: '/images/projects/tender-2.jpg',
+  tender3: '/images/projects/tender-3.jpg',
 };
 
 export const SERVICES = [
@@ -151,28 +154,28 @@ export const PROJECTS = [
 
 export const TENDERS = [
   {
-    title: 'Villa G+1 — Al Shamkha',
-    location: 'Al Shamkha, Abu Dhabi',
-    submissionDate: '2026-02-15',
-    description: 'Construction of a G+1 luxury villa with modern architectural design, landscaping, and boundary wall works.',
+    title: 'Residential Private Villa',
+    location: 'Madinat Al Riyad, Abu Dhabi',
+    submissionDate: '2026-07-15',
+    description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: '#',
-    image: IMAGES.villa3,
+    image: IMAGES.tender1,
   },
   {
-    title: 'Commercial Showroom — Mussafah',
-    location: 'Mussafah Industrial, Abu Dhabi',
-    submissionDate: '2026-02-28',
-    description: 'Fit-out and construction of a 2-floor commercial showroom with MEP systems and fire protection.',
+    title: 'Residential Private Villa',
+    location: 'Madinat Al Riyad, Abu Dhabi',
+    submissionDate: '2026-07-28',
+    description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: '#',
-    image: IMAGES.commercial3,
+    image: IMAGES.tender2,
   },
   {
-    title: 'Residential Building G+4 — Al Reef',
-    location: 'Al Reef, Abu Dhabi',
-    submissionDate: '2026-03-10',
-    description: 'New construction of a G+4 residential building with 20 apartments, parking, and amenities.',
+    title: 'Residential Private Villa',
+    location: 'Madinat Al Riyad, Abu Dhabi',
+    submissionDate: '2026-07-10',
+    description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: '#',
-    image: IMAGES.skyline2,
+    image: IMAGES.tender3,
   },
 ];
 
