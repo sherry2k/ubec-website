@@ -79,10 +79,12 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12">
           {/* Company */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-white font-bold text-lg">
-                UB
-              </div>
+           <div className="flex items-center gap-3 mb-6">
+  <img 
+    src="/images/logo-white.png" 
+    alt="UBEC Logo" 
+    className="h-12 w-auto"
+  />
               <div>
                 <div className="text-white text-sm font-bold leading-tight">Universal Building</div>
                 <div className="text-white/40 text-[10px] font-medium uppercase tracking-[0.2em]">Engineering Consultants</div>
