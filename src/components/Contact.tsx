@@ -1,11 +1,32 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+
+// ============================================================
+// ⚙️ CONFIGURATION — UPDATE THESE WITH YOUR REAL DETAILS
+// ============================================================
+
+// 1. Get your free access key from https://web3forms.com
+//    Enter the email where you want to RECEIVE form submissions
+const WEB3FORMS_ACCESS_KEY = '8f61f16f-a841-47d5-b202-71924665d95c';
+
+// 2. Your contact details
+const COMPANY_INFO = {
+  address: ['Abu Dhabi, United Arab Emirates', 'Office 123, Business Tower'],
+  phones: ['+971 XX XXX XXXX', '+971 XX XXX XXXX'],
+  emails: ['info@ubec.ae', 'projects@ubec.ae'],
+  hours: ['Sun–Thu: 8:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
+  whatsapp: '971000000000', // Number without + or spaces
+  googleMapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.1610963!2d54.2471!3d24.4539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc1b301a2e1d4bf0!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae',
+};
+
+// ============================================================
 
 export default function Contact() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation(0.1);
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,33 +35,65 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
-    setTimeout(() => setFormSubmitted(false), 4000);
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    setFormStatus('sending');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `New UBEC Inquiry from ${formData.name}`,
+          from_name: 'UBEC Website',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+        setTimeout(() => setFormStatus('idle'), 5000);
+      } else {
+        setFormStatus('error');
+        setErrorMessage('Something went wrong. Please try again or contact us directly.');
+      }
+    } catch {
+      setFormStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
+    }
   };
 
   const contactInfo = [
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Abu Dhabi, United Arab Emirates', 'Office 123, Business Tower'],
+      details: COMPANY_INFO.address,
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+971 XX XXX XXXX', '+971 XX XXX XXXX'],
+      details: COMPANY_INFO.phones,
+      links: COMPANY_INFO.phones.map(p => `tel:${p.replace(/\s/g, '')}`),
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@ubec.ae', 'projects@ubec.ae'],
+      details: COMPANY_INFO.emails,
+      links: COMPANY_INFO.emails.map(e => `mailto:${e}`),
     },
     {
       icon: Clock,
       title: 'Working Hours',
-      details: ['Sun–Thu: 8:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
+      details: COMPANY_INFO.hours,
     },
   ];
 
@@ -96,8 +149,14 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-charcoal text-sm">{item.title}</h4>
-                  {item.details.map((d) => (
-                    <p key={d} className="text-gray-body text-sm mt-0.5">{d}</p>
+                  {item.details.map((d, i) => (
+                    item.links ? (
+                      <a key={d} href={item.links[i]} className="block text-gray-body text-sm mt-0.5 hover:text-brand transition-colors">
+                        {d}
+                      </a>
+                    ) : (
+                      <p key={d} className="text-gray-body text-sm mt-0.5">{d}</p>
+                    )
                   ))}
                 </div>
               </div>
@@ -105,7 +164,7 @@ export default function Contact() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/971000000000"
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%2C%20I%20am%20interested%20in%20your%20engineering%20services.%20Can%20you%20please%20provide%20more%20information%3F`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-4 bg-[#25D366] text-white font-semibold rounded-2xl hover:bg-[#20BD5A] transition-all shadow-lg shadow-[#25D366]/20"
@@ -117,7 +176,7 @@ export default function Contact() {
             {/* Map */}
             <div className="rounded-2xl overflow-hidden border border-border/40 h-48">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.1610963!2d54.2471!3d24.4539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc1b301a2e1d4bf0!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                src={COMPANY_INFO.googleMapEmbed}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -139,7 +198,8 @@ export default function Contact() {
             <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl shadow-charcoal/5 border border-border/40">
               <h3 className="text-xl font-bold text-charcoal mb-6">Get a Free Consultation</h3>
 
-              {formSubmitted ? (
+              {/* Success Message */}
+              {formStatus === 'success' ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -149,8 +209,30 @@ export default function Contact() {
                     <CheckCircle2 className="w-8 h-8 text-brand" />
                   </div>
                   <h4 className="text-xl font-bold text-charcoal">Thank You!</h4>
-                  <p className="text-gray-body mt-2">We'll get back to you within 24 hours.</p>
+                  <p className="text-gray-body mt-2 max-w-sm">Your message has been sent successfully. We will get back to you within 24 hours.</p>
                 </motion.div>
+
+              /* Error Message */
+              ) : formStatus === 'error' ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="flex flex-col items-center justify-center py-16 text-center"
+                >
+                  <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mb-4">
+                    <AlertCircle className="w-8 h-8 text-red-500" />
+                  </div>
+                  <h4 className="text-xl font-bold text-charcoal">Oops!</h4>
+                  <p className="text-gray-body mt-2 max-w-sm">{errorMessage}</p>
+                  <button
+                    onClick={() => setFormStatus('idle')}
+                    className="mt-4 px-6 py-2.5 bg-brand text-white text-sm font-semibold rounded-xl hover:bg-brand-dark transition-all"
+                  >
+                    Try Again
+                  </button>
+                </motion.div>
+
+              /* Form */
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
@@ -197,15 +279,18 @@ export default function Contact() {
                         className="w-full px-4 py-3.5 rounded-xl bg-gray-light border border-border/60 text-charcoal text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/10 transition-all appearance-none"
                       >
                         <option value="">Select a service</option>
-                        <option value="architectural">Architectural Design</option>
-                        <option value="structural">Structural Engineering</option>
-                        <option value="mep">MEP Drawings</option>
-                        <option value="approvals">Authority Approvals</option>
-                        <option value="pm">Project Management</option>
-                        <option value="supervision">Construction Supervision</option>
-                        <option value="interior">Interior Design</option>
-                        <option value="bim">BIM Modeling</option>
-                        <option value="other">Other</option>
+                        <option value="Architectural Design">Architectural Design</option>
+                        <option value="Structural Engineering">Structural Engineering</option>
+                        <option value="MEP Drawings">MEP Drawings</option>
+                        <option value="Authority Approvals">Authority Approvals</option>
+                        <option value="Project Management">Project Management</option>
+                        <option value="Construction Supervision">Construction Supervision</option>
+                        <option value="Interior Design">Interior Design</option>
+                        <option value="BIM Modeling">BIM Modeling</option>
+                        <option value="Quantity Surveying">Quantity Surveying</option>
+                        <option value="Feasibility Studies">Feasibility Studies</option>
+                        <option value="Renovation & Extension">Renovation & Extension</option>
+                        <option value="Other">Other</option>
                       </select>
                     </div>
                   </div>
@@ -223,10 +308,20 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 py-4 bg-brand text-white font-semibold rounded-2xl hover:bg-brand-dark transition-all text-sm hover:shadow-lg hover:shadow-brand/20"
+                    disabled={formStatus === 'sending'}
+                    className="w-full flex items-center justify-center gap-2 py-4 bg-brand text-white font-semibold rounded-2xl hover:bg-brand-dark transition-all text-sm hover:shadow-lg hover:shadow-brand/20 disabled:opacity-70 disabled:cursor-not-allowed"
                   >
-                    <Send className="w-4 h-4" />
-                    Send Consultation Request
+                    {formStatus === 'sending' ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4" />
+                        Send Consultation Request
+                      </>
+                    )}
                   </button>
                 </form>
               )}
