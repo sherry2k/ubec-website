@@ -18,18 +18,15 @@ const quickLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Projects', href: '#projects' },
   { label: 'Tenders', href: '#tenders' },
-  { label: 'Blog & Insights', href: '#insights' },
   { label: 'Contact Us', href: '#contact' },
-  { label: 'Privacy Policy', href: '#' },
-  { label: 'Terms of Service', href: '#' },
+  
 ];
 
 const socials = [
-  { icon: Link2, href: '#', label: 'LinkedIn' },
-  { icon: Share2, href: '#', label: 'Instagram' },
-  { icon: Globe, href: '#', label: 'Facebook' },
-  { icon: MessageSquare, href: '#', label: 'Twitter' },
-];
+  { icon: Tiktok, href: 'https://www.tiktok.com/@ubec4cons?_t=ZS-8wK3TxMl96d&_r=1', label: 'Tiktok' },
+  { icon: Instagrame, href: 'https://www.instagram.com/ubec4cons?igsh=eXo2NGxxMmRpamR5&utm_source=qr', label: 'Instagram' },
+  { icon: Facebook, href: '#', label: 'Facebook' },
+  ];
 
 export default function Footer() {
   const { ref, isVisible } = useScrollAnimation(0.1);
