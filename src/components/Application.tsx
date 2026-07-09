@@ -14,9 +14,9 @@ const APP_CONFIG = {
   // Replace with your actual app screenshot images
   // Upload to public/images/ folder and use paths like '/images/app-screen-1.png'
   appScreenshots: [
-    'https://images.pexels.com/photos/8947141/pexels-photo-8947141.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800',
-    'https://images.pexels.com/photos/8490101/pexels-photo-8490101.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800',
-    'https://images.pexels.com/photos/7657488/pexels-photo-7657488.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800',
+    '/images/app-screen-1.png',
+    '/images/app-screen-2.png',
+    
   ],
 };
 
