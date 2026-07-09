@@ -104,7 +104,7 @@ export const PROJECTS = [
     location: 'Madinat Al Riyad, UAE',
     type: 'Residential Villa',
     services: ['Architectural Design', 'BIM Modeling','Site Supervision', 'MEP'],
-    status: 'In Progress',
+    status: 'Completed',
     image: IMAGES.villa2,
     featured: false,
   },
