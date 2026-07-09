@@ -79,7 +79,6 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
                 Download Drawings
               </a>
              
-              </a>
             </>
           )}
         </div>
