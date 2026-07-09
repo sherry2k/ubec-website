@@ -16,6 +16,7 @@ const APP_CONFIG = {
   appScreenshots: [
     '/images/projects/app-screen-1.png',
     '/images/projects/app-screen-2.png',
+    '/images/projects/app-screen-3.png',
     
   ],
 };
