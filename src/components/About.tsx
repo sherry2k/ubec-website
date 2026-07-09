@@ -1,7 +1,18 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
-import { IMAGES } from '@/data/content';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+
+// ============================================================
+// ⚙️ ABOUT SECTION IMAGES — No faces, design/conceptual only
+// Replace with your own images:
+//   Upload to public/images/about/ and use '/images/about/...'
+// ============================================================
+const ABOUT_IMAGES = {
+  // Main: Detailed architectural floor plan / drawing
+  main: 'https://images.pexels.com/photos/4458193/pexels-photo-4458193.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+  // Secondary: 3D rendered modern villa exterior
+  secondary: 'https://images.pexels.com/photos/16573669/pexels-photo-16573669.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+};
 
 const highlights = [
   'Professional Expertise & Qualified Engineers',
@@ -33,15 +44,15 @@ export default function About() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={IMAGES.engineers1}
-                  alt="Engineering team reviewing blueprints"
+                  src={ABOUT_IMAGES.main}
+                  alt="Architectural floor plan and design drawings"
                   className="w-full h-80 sm:h-96 object-cover"
                 />
               </div>
               <div className="absolute -bottom-8 -right-4 sm:-right-8 w-48 sm:w-56 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                 <img
-                  src={IMAGES.engineers3}
-                  alt="Engineers on construction site"
+                  src={ABOUT_IMAGES.secondary}
+                  alt="Drafting tools and conceptual design workspace"
                   className="w-full h-36 sm:h-44 object-cover"
                 />
               </div>
