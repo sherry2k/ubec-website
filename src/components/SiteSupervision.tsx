@@ -11,43 +11,43 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const SITE_PHOTOS = [
   {
-    image: 'https://images.pexels.com/photos/8961028/pexels-photo-8961028.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+    image: '/images/supervision/photo-1.jpg',
     caption: 'Structural inspection during construction phase',
     size: 'large',   // large = spans 2 columns
   },
   {
-    image: 'https://images.pexels.com/photos/8961259/pexels-photo-8961259.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-    caption: 'Engineers reviewing site progress',
+    image: '/images/supervision/photo-2.jpg',
+    caption: 'Engineers reviewing site progress at finishing stage',
     size: 'small',
   },
   {
-    image: 'https://images.pexels.com/photos/8961064/pexels-photo-8961064.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+    image: '/images/supervision/photo-3.jpg',
     caption: 'Quality control assessment on site',
     size: 'small',
   },
   {
-    image: 'https://images.pexels.com/photos/8961006/pexels-photo-8961006.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+    image: '/images/supervision/photo-4.jpg',
     caption: 'Blueprint verification at project location',
     size: 'small',
   },
   {
-    image: 'https://images.pexels.com/photos/8961003/pexels-photo-8961003.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-    caption: 'Team coordination and safety briefing',
-    size: 'small',
-  },
-  {
-    image: 'https://images.pexels.com/photos/8470036/pexels-photo-8470036.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-    caption: 'Wall alignment and level checking',
-    size: 'large',
-  },
-  {
-    image: 'https://images.pexels.com/photos/17797264/pexels-photo-17797264.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+    image: '/images/supervision/photo-5.jpg',
     caption: 'Construction progress documentation',
     size: 'small',
   },
   {
-    image: 'https://images.pexels.com/photos/8961146/pexels-photo-8961146.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
-    caption: 'MEP systems installation supervision',
+    image: '/images/supervision/photo-6.jpg',
+    caption: 'Team coordination while slab casting',
+    size: 'large',
+  },
+  {
+    image: '/images/supervision/photo-7.jpg',
+    caption: 'Construction progress documentation',
+    size: 'small',
+  },
+  {
+    image: '/images/supervision/photo-8.jpg',
+    caption: 'Construction progress documentation',
     size: 'small',
   },
 ];
