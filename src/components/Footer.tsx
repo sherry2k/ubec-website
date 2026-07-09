@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, ArrowUp, Globe, Share2, MessageSquare, Link2 } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowUp, Facebook, Tiktok, Instagram, Link2 } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const services = [
