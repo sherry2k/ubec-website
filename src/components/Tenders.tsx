@@ -25,9 +25,11 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
           alt={tender.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
-        <div className="absolute top-4 right-4 px-3 py-1.5 bg-brand text-white text-xs font-semibold rounded-full">
-          Open for Bidding
+       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
+        <div className={`absolute top-4 right-4 px-3 py-1.5 text-white text-xs font-semibold rounded-full ${
+          tender.status === 'closed' ? 'bg-gray-accent' : 'bg-brand'
+        }`}>
+          {tender.status === 'closed' ? 'Bidding Closed' : 'Open for Bidding'}
         </div>
         <div className="absolute bottom-4 left-4 right-4">
           <h3 className="text-white font-bold text-xl">{tender.title}</h3>
@@ -53,11 +55,16 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
           <div className="flex items-center gap-3 text-sm">
             <Calendar className="w-4 h-4 text-brand shrink-0" />
             <span className="text-charcoal font-medium">
-              Submission: {new Date(tender.submissionDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+              Last Submission Date: {new Date(tender.submissionDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </span>
           </div>
         </div>
-
+<div className="mt-6 pt-6 border-t border-border flex flex-wrap gap-3">
+          {tender.status === 'closed' ? (
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-accent/15 text-gray-accent text-sm font-semibold rounded-xl cursor-not-allowed">
+              <Lock className="w-4 h-4" />
+              Bidding Closed
+            </div>
         <div className="mt-6 pt-6 border-t border-border flex flex-wrap gap-3">
           <a
             href={tender.drawingsLink}
