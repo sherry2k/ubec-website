@@ -239,25 +239,7 @@ export default function Application() {
                 </div>
               </motion.div>
 
-              {/* Right phone (behind) */}
-              <motion.div
-                initial={{ opacity: 0, y: 40, rotate: 5 }}
-                animate={phonesVisible ? { opacity: 1, y: 0, rotate: 5 } : {}}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="hidden sm:block relative -ml-8 z-0"
-              >
-                <div className="w-48 h-[400px] rounded-[2rem] bg-charcoal border-2 border-white/10 shadow-2xl overflow-hidden p-2">
-                  <div className="w-full h-full rounded-[1.5rem] overflow-hidden bg-gray-light">
-                    <img
-                      src={APP_CONFIG.appScreenshots[2]}
-                      alt="UBEC App Screen"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
+              
             {/* Floating elements */}
             <div className="absolute -top-4 right-8 w-16 h-16 border border-brand/15 rounded-2xl rotate-12 animate-float" />
             <div className="absolute -bottom-4 left-8 w-12 h-12 border border-white/5 rounded-full animate-float-delayed" />
