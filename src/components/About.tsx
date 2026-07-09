@@ -9,9 +9,9 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 // ============================================================
 const ABOUT_IMAGES = {
   // Main: Detailed architectural floor plan / drawing
-  main: 'https://images.pexels.com/photos/4458193/pexels-photo-4458193.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+  main: '/images/about/about.png',
   // Secondary: 3D rendered modern villa exterior
-  secondary: 'https://images.pexels.com/photos/16573669/pexels-photo-16573669.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200',
+  secondary: '/images/about/about-1.jpg',
 };
 
 const highlights = [
