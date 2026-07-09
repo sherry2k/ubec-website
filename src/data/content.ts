@@ -197,7 +197,7 @@ export const TENDERS = [
     location: 'Madinat Al Riyad, Abu Dhabi',
     submissionDate: '2026-07-15',
     description: 'Construction of New Residential Villa G+2 and Boundarywall',
-    drawingsLink: '#',
+    drawingsLink: 'https://www.youtube.com/',
     image: IMAGES.tender1,
   },
   {
@@ -359,7 +359,6 @@ export const BLOG_POSTS = [
 
 export const PARTNERS = [
   'Abu Dhabi Municipality',
-  'Dubai Municipality',
   'ALDAR',
   'DMT',
   'Civil Defense',
