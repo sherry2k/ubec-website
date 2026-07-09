@@ -55,7 +55,7 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
           <div className="flex items-center gap-3 text-sm">
             <Calendar className="w-4 h-4 text-brand shrink-0" />
             <span className="text-charcoal font-medium">
-              Last Submission Date: {new Date(tender.submissionDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+             Submission: {new Date(tender.submissionDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </span>
           </div>
         </div>
@@ -65,17 +65,27 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
               <Lock className="w-4 h-4" />
               Bidding Closed
             </div>
-        <div className="mt-6 pt-6 border-t border-border flex flex-wrap gap-3">
-          <a
-            href={tender.drawingsLink}
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand text-white text-sm font-semibold rounded-xl hover:bg-brand-dark transition-all"
-          >
-            <Download className="w-4 h-4" />
-            Download Drawings
-          </a>
+    ) : (
+            <>
+       <a
+                href={tender.drawingsLink}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand text-white text-sm font-semibold rounded-xl hover:bg-brand-dark transition-all"
+              >
+                <Download className="w-4 h-4" />
+                Download Drawings
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-charcoal/5 text-charcoal text-sm font-semibold rounded-xl hover:bg-charcoal/10 transition-all"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Submit Bid
+              </a>
+            </>
+          )}
         
         </div>
       </div>
