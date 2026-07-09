@@ -48,7 +48,7 @@ export default function Projects() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-gray-body text-base sm:text-lg leading-relaxed"
           >
-            A showcase of our diverse engineering projects across the UAE, from luxury villas to commercial towers.
+            A showcase of our diverse engineering projects across the UAE, from luxury modern villas to commercial towers.
           </motion.p>
         </div>
 
