@@ -93,7 +93,7 @@ export default function Application() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-white/60 text-base sm:text-lg leading-relaxed max-w-lg"
             >
-              Download the UBEC mobile app to track your projects, view tender updates, access documents, and stay connected with our engineering team — all from your smartphone.
+              Download the UBEC mobile app to track your projects, view tender updates, access your documents, and stay connected with our engineering team — all from your smartphone.
             </motion.p>
 
             {/* App features */}
@@ -230,7 +230,7 @@ export default function Application() {
                         <div className="flex items-center gap-3">
                           <div className="w-10 h-10 rounded-xl bg-brand flex items-center justify-center text-white font-bold text-xs">UB</div>
                           <div>
-                            <div className="text-charcoal text-xs font-bold">UBEC Engineering</div>
+                            <div className="text-charcoal text-xs font-bold">UBEC</div>
                             <div className="text-gray-accent text-[10px]">Project Management App</div>
                           </div>
                         </div>
