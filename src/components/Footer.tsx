@@ -36,14 +36,19 @@ const quickLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Projects', href: '#projects' },
   { label: 'Tenders', href: '#tenders' },
+  { label: 'Application', href: '#application' },
   { label: 'Contact Us', href: '#contact' },
-  ];
-
- socials = [
-  { icon: InstagramIcon, href: 'https://www.instagram.com/ubec4cons?igsh=eXo2NGxxMmRpamR5&utm_source=qr', label: 'Instagram' },
-  { icon: TikTokIcon, href: 'https://www.tiktok.com/@ubec4cons?_t=ZS-8wK3TxMl96d&_r=1', label: 'TikTok' },
+  { label: 'Privacy Policy', href: '#' },
+  { label: 'Terms of Service', href: '#' },
 ];
 
+// ============================================================
+// ⚙️ UPDATE THESE WITH YOUR REAL SOCIAL MEDIA LINKS
+// ============================================================
+const socials = [
+  { icon: InstagramIcon, href: 'https://www.instagram.com/YOUR_USERNAME', label: 'Instagram' },
+  { icon: TikTokIcon, href: 'https://www.tiktok.com/@YOUR_USERNAME', label: 'TikTok' },
+];
 
 export default function Footer() {
   const { ref, isVisible } = useScrollAnimation(0.1);
