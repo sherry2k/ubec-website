@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, ArrowUp, Facebook, Tiktok, Instagram, Link2 } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowUp, Globe, Share2, MessageSquare, Link2 } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const services = [
@@ -23,10 +23,11 @@ const quickLinks = [
 ];
 
 const socials = [
-  { icon: Tiktok, href: 'https://www.tiktok.com/@ubec4cons?_t=ZS-8wK3TxMl96d&_r=1', label: 'Tiktok' },
-  { icon: Instagrame, href: 'https://www.instagram.com/ubec4cons?igsh=eXo2NGxxMmRpamR5&utm_source=qr', label: 'Instagram' },
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  ];
+  { icon: Link2, href: '#', label: 'LinkedIn' },
+  { icon: Share2, href: '#', label: 'Instagram' },
+  { icon: Globe, href: '#', label: 'Facebook' },
+  { icon: MessageSquare, href: '#', label: 'Twitter' },
+];
 
 export default function Footer() {
   const { ref, isVisible } = useScrollAnimation(0.1);
