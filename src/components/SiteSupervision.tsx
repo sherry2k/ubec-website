@@ -11,12 +11,12 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const SITE_PHOTOS = [
   {
-    image: '/images/supervision/photo-1.jpg',
+    image: '/images/supervision/photo-1.jpeg',
     caption: 'Structural inspection during construction phase',
     size: 'large',   // large = spans 2 columns
   },
   {
-    image: '/images/supervision/photo-2.jpg',
+    image: '/images/supervision/photo-2.jpeg',
     caption: 'Engineers reviewing site progress at finishing stage',
     size: 'small',
   },
