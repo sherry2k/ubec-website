@@ -37,8 +37,7 @@ const quickLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Tenders', href: '#tenders' },
   { label: 'Contact Us', href: '#contact' },
-  
-];
+  ];
 
  socials = [
   { icon: InstagramIcon, href: 'https://www.instagram.com/ubec4cons?igsh=eXo2NGxxMmRpamR5&utm_source=qr', label: 'Instagram' },
