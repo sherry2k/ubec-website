@@ -21,32 +21,32 @@ const SITE_PHOTOS = [
     size: 'small',
   },
   {
-    image: '/images/supervision/photo-3.jpg',
+    image: '/images/supervision/photo-3.jpeg',
     caption: 'Quality control assessment on site',
     size: 'small',
   },
   {
-    image: '/images/supervision/photo-4.jpg',
+    image: '/images/supervision/photo-4.jpeg',
     caption: 'Blueprint verification at project location',
     size: 'small',
   },
   {
-    image: '/images/supervision/photo-5.jpg',
+    image: '/images/supervision/photo-5.jpeg',
     caption: 'Construction progress documentation',
     size: 'small',
   },
   {
-    image: '/images/supervision/photo-6.jpg',
+    image: '/images/supervision/photo-6.jpeg',
     caption: 'Team coordination while slab casting',
     size: 'large',
   },
   {
-    image: '/images/supervision/photo-7.jpg',
+    image: '/images/supervision/photo-7.jpeg',
     caption: 'Construction progress documentation',
     size: 'small',
   },
   {
-    image: '/images/supervision/photo-8.jpg',
+    image: '/images/supervision/photo-8.jpeg',
     caption: 'Construction progress documentation',
     size: 'small',
   },
