@@ -11,7 +11,7 @@ const categoryMap: Record<string, string> = {
   'Commercial Complex': 'Commercial',
   'Luxury Villa': 'Residential Villa',
   'Mosque': 'Mosque',
-  'Residential Villa': 'Residential Villa ',
+  'Residential Villa': 'Residential Villa',
   'Industrial Facility': 'Industrial',
   'Mixed-use Development': 'Mixed-use',
   'Luxury Residences': 'Interiors',
