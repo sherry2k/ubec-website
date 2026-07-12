@@ -4,17 +4,24 @@ import { MapPin, ArrowUpRight } from 'lucide-react';
 import { PROJECTS } from '@/data/content';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-const categories = ['All', 'Commercial', 'Residential', 'Industrial', 'Mixed-use', 'Mosque'];
-
+const categories = ['All', 'Commercial', 'Villa', 'Residential', 'Industrial', 'Mixed-use', 'Mosque'];
+// Map each project type to its filter category
+const categoryMap: Record<string, string> = {
+  'Commercial Tower': 'Commercial',
+  'Commercial Complex': 'Commercial',
+  'Luxury Villa': 'Villa',
+  'Mosque': 'Mosque',
+  'Residential Community': 'Residential',
+  'Industrial Facility': 'Industrial',
+  'Mixed-use Development': 'Mixed-use',
+  'Luxury Residences': 'Residential',
+};
 export default function Projects() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation(0.2);
   const [activeCategory, setActiveCategory] = useState('All');
-
   const filteredProjects = activeCategory === 'All'
     ? PROJECTS
-    : PROJECTS.filter(p =>
-        p.type.toLowerCase().includes(activeCategory.toLowerCase())
-      );
+    : PROJECTS.filter(p => categoryMap[p.type] === activeCategory);
 
   return (
     <section id="projects" className="py-24 md:py-32 bg-gray-light relative overflow-hidden">
