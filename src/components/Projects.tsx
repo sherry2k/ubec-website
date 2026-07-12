@@ -19,9 +19,6 @@ const categoryMap: Record<string, string> = {
 export default function Projects() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation(0.2);
   const [activeCategory, setActiveCategory] = useState('All');
-  const filteredProjects = activeCategory === 'All'
-    ? PROJECTS
-    : PROJECTS.filter(p => categoryMap[p.type] === activeCategory);
 
   return (
     <section id="projects" className="py-24 md:py-32 bg-gray-light relative overflow-hidden">
