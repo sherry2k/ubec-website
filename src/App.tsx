@@ -1,0 +1,37 @@
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Services from '@/components/Services';
+import Tenders from '@/components/Tenders';
+import Projects from '@/components/Projects';
+import Application from '@/components/Application';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import Process from '@/components/Process';
+import SiteSupervision from '@/components/SiteSupervision';
+import Testimonials from '@/components/Testimonials';
+import Partners from '@/components/Partners';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-white antialiased">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Tenders />
+        <Projects />
+        <Application />
+        <WhyChooseUs />
+        <Process />
+        <SiteSupervision />
+        <Testimonials />
+        <Partners />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+}
