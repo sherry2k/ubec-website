@@ -81,12 +81,12 @@ export default function Projects() {
           ))}
         </motion.div>
 
-        {/* Projects Grid - Masonry-like */}
+         {/* Projects Grid - Masonry-like */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, i) => (
               <motion.div
-                key={project.title}
+                key={`${project.title}-${project.location}-${i}`}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
