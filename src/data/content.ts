@@ -88,7 +88,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'MEP'],
     status: 'Completed',
     image: IMAGES.commercial1,
-    featured: false,
+    featured: true,
   },
   {
     title: 'Modern Private Villa',
@@ -97,7 +97,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'Interior Design', 'Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa1,
-    featured: false,
+    featured: true,
   },
    {
     title: 'Modern Private Villa',
