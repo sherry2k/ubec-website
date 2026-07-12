@@ -93,7 +93,7 @@ export const PROJECTS = [
   {
     title: 'Modern Private Villa',
     location: 'Madinat Riyad, Abu Dhabi, UAE',
-    type: 'MResidential Villa',
+    type: 'Residential Villa',
     services: ['Architectural Design', 'Interior Design', 'Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa1,
