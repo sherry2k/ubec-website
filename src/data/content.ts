@@ -175,7 +175,7 @@ export const PROJECTS = [
     title: 'Town House',
     location: 'Al Dhafra Region, Abu Dhabi, UAE',
     type: 'Mixed-use Development',
-    services: ['Architectural Design', 'Structiral Design', 'MEP'],
+    services: ['Architectural Design', 'Structural Design', 'MEP'],
     status: 'In Progress',
     image: IMAGES.skyline3,
     featured: false,
