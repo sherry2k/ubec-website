@@ -158,7 +158,7 @@ export default function Header() {
                 onClick={() => handleNavClick('#contact')}
                 className="w-full py-4 bg-brand text-white font-semibold rounded-2xl hover:bg-brand-dark transition-all"
               >
-                Get Free Consultation
+                Get Free Proposal
               </button>
             </div>
           </motion.div>
