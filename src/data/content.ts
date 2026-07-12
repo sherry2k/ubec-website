@@ -97,7 +97,7 @@ export const PROJECTS = [
     services: ['Architectural Design', 'Interior Design', 'Site Supervision', 'MEP'],
     status: 'In Progress',
     image: IMAGES.villa1,
-    featured: true,
+    featured: false,
   },
    {
     title: 'Modern Private Villa',
