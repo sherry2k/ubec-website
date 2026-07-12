@@ -110,7 +110,7 @@ export default function Header() {
                 onClick={() => handleNavClick('#contact')}
                 className="hidden lg:block px-5 py-2.5 bg-brand text-white text-[13px] font-semibold rounded-xl hover:bg-brand-dark transition-all hover:shadow-lg hover:shadow-brand/20"
               >
-                Free Proposal
+                FREE PROPOSAL
               </button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
