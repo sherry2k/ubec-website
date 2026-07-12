@@ -17,11 +17,9 @@ export default function Partners() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand/5 rounded-full mb-4">
             <div className="w-1.5 h-1.5 bg-brand rounded-full" />
-            <span className="text-brand text-xs font-semibold uppercase tracking-[0.15em]">Trusted Partners</span>
+            <span className="text-brand text-xs font-semibold uppercase tracking-[0.15em]">Accredited By UAE Authorities</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-charcoal">
-            Authorities & <span className="gradient-text">Partners</span>
-          </h2>
+        
         </motion.div>
 
         {/* Partner Logos */}
