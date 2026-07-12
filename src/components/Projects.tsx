@@ -4,14 +4,14 @@ import { MapPin, ArrowUpRight } from 'lucide-react';
 import { PROJECTS } from '@/data/content';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-const categories = ['All', 'Commercial', 'Residential Villa',  'Industrial', 'Mixed-use', 'Mosque', 'Interiors'];
+const categories = ['All', 'Commercial', 'Villa',  'Industrial', 'Mixed-use', 'Mosque', 'Interiors'];
 // Map each project type to its filter category
 const categoryMap: Record<string, string> = {
   'Commercial Tower': 'Commercial',
   'Commercial Complex': 'Commercial',
-  'Luxury Villa': 'Residential Villa',
+  'Luxury Villa': 'Villa',
   'Mosque': 'Mosque',
-  'Residential Villa': 'Residential Villa',
+  'Residential Villa': 'Villa',
   'Industrial Facility': 'Industrial',
   'Mixed-use Development': 'Mixed-use',
   'Luxury Residences': 'Interiors',
