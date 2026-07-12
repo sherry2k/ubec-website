@@ -9,7 +9,6 @@ const categories = ['All', 'Commercial', 'Villa',  'Industrial', 'Mixed-use', 'M
 const categoryMap: Record<string, string> = {
   'Commercial Tower': 'Commercial',
   'Commercial Complex': 'Commercial',
-  'Luxury Villa': 'Villa',
   'Mosque': 'Mosque',
   'Residential Villa': 'Villa',
   'Industrial Facility': 'Industrial',
