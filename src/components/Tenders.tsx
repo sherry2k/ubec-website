@@ -48,6 +48,7 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
         <p className="text-gray-body text-sm leading-relaxed mb-6">{tender.description}</p>
 
         <div className="space-y-3">
+          <p className="text-base font-medium text-gray-body/70 uppercase tracking-wide">{tender.projectName}</p>
           <div className="flex items-center gap-3 text-sm">
             <MapPin className="w-4 h-4 text-brand shrink-0" />
             <span className="text-charcoal font-medium">{tender.location}</span>

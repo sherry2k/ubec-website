@@ -193,6 +193,7 @@ export const PROJECTS = [
 
 export const TENDERS = [
   {
+    projectName: 'Villa - احمد عبيد سعيد الشميلى',
     title: 'Residential Private Villa',
     location: 'Madinat Al Riyad, Abu Dhabi',
     submissionDate: '2026-07-15',
@@ -202,6 +203,7 @@ export const TENDERS = [
     status: 'open' as const,
   },
   {
+    projectName: 'Villa - راشد حسن عبدالله حسن الزعابي',
     title: 'Residential Private Villa',
     location: 'Madinat Al Riyad, Abu Dhabi',
     submissionDate: '2026-06-20',
@@ -212,6 +214,7 @@ export const TENDERS = [
     featured: false,
   },
   {
+    projectName: 'Villa - عمر حسن عبدالله حسن الزعابي',
     title: 'Residential Private Villa',
     location: 'Madinat Al Riyad, Abu Dhabi',
     submissionDate: '2026-06-20',
