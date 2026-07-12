@@ -53,17 +53,17 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-<a href="#home" onClick={() => handleNavClick('#home')} className="flex items-center gap-3 group">
-  <img 
-    src="/images/logo.png" 
-    alt="UBEC Logo" 
-    className="h-12 w-auto group-hover:scale-105 transition-transform"
-  />
-              <div className="hidden sm:block">
-                <div className={`text-sm font-bold leading-tight tracking-tight transition-colors ${isScrolled ? 'text-charcoal' : 'text-white'}`}>
+<a href="#home" onClick={() => handleNavClick('#home')} className="flex items-center gap-2 sm:gap-3 group">
+              <img 
+                src="/images/logo.png" 
+                alt="UBEC Logo" 
+                className="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform shrink-0"
+              />
+              <div>
+                <div className={`text-xs sm:text-sm font-bold leading-tight tracking-tight transition-colors ${isScrolled ? 'text-charcoal' : 'text-white'}`}>
                   Universal Building
                 </div>
-                <div className={`text-[10px] font-medium uppercase tracking-[0.2em] transition-colors ${isScrolled ? 'text-gray-accent' : 'text-white/70'}`}>
+                <div className={`text-[8px] sm:text-[10px] font-medium uppercase tracking-[0.15em] sm:tracking-[0.2em] transition-colors ${isScrolled ? 'text-gray-accent' : 'text-white/70'}`}>
                   Engineering Consultants
                 </div>
               </div>
