@@ -200,7 +200,7 @@ export const TENDERS = [
     description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: 'https://khaledeng1.wetransfer.com/downloads/32d478dfc1a25b6c5c7346484769c63020260708054424/894d4a?t_exp=1815025464&t_lsid=a2688308-e81a-464e-bebd-4cf49e68af26&t_network=link&t_rid=YXV0aDB8VHJhbnNmZXJ8cThncXNxajhiZDl6Z3E=&t_s=download_link&t_ts=1783489464',
     image: IMAGES.tender1,
-    status: 'open' as const,
+    status: 'closed' as const,
   },
   {
     projectName: 'Villa - راشد حسن عبدالله حسن الزعابي',
