@@ -208,7 +208,7 @@ export const TENDERS = [
     location: 'Madinat Al Riyad, Abu Dhabi',
     submissionDate: '2026-08-02',
     description: 'Construction of New Residential Villa G+2 and Boundarywall',
-    drawingsLink: 'https://khaledeng1.wetransfer.com/downloads/ff87bccbde9b5831fb6ccfc4364167af20260726111614/c50981?t_exp=1787656574&t_lsid=a2688308-e81a-464e-bebd-4cf49e68af26&t_network=link&t_rid=YXV0aDB8VHJhbnNmZXJ8cThncXNxajhiZDl6Z3E=&t_s=download_link&t_ts=1785064574',
+    drawingsLink: 'https://we.tl/t-GD1Hv3GqZaEyHxpN',
     image: IMAGES.tender2,
     status: 'open' as const,
   },
