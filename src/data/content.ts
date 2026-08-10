@@ -6,6 +6,7 @@ export const IMAGES = {
   villa2: '/images/projects/villa-2.jpg',
   villa3: '/images/projects/villa-3.jpg',
   villa4: '/images/projects/villa-4.jpg',
+  villa5: '/images/projects/villa-5.jpg',
   commercial1: '/images/projects/commercial-1.jpg',
   commercial2: '/images/projects/commercial-2.jpg',
   commercial3: '/images/projects/commercial-3.jpg',
@@ -108,6 +109,15 @@ export const PROJECTS = [
     image: IMAGES.villa2,
     featured: false,
   },
+  {
+    title: 'Modern Private Villa',
+    location: 'Al Shamkhah, UAE',
+    type: 'Residential Villa',
+    services: ['Architectural Design', 'Site Supervision', 'MEP'],
+    status: 'In Progress',
+    image: IMAGES.villa5,
+    featured: false,
+  }
    {
     title: 'Private Villa',
     location: 'Al Shawamekh, UAE',
