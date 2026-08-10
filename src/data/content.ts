@@ -200,7 +200,7 @@ export const TENDERS = [
     description: 'Villa Extension at Ground Floor & First Floor',
     drawingsLink: 'https://khaledeng1.wetransfer.com/downloads/c811ed4d78674197bd944db053c63ab620260726091203/e8acf6?t_exp=1816593124&t_lsid=a2688308-e81a-464e-bebd-4cf49e68af26&t_network=link&t_rid=YXV0aDB8VHJhbnNmZXJ8cThncXNxajhiZDl6Z3E=&t_s=download_link&t_ts=1785057124',
     image: IMAGES.tender1,
-    status: 'open' as const,
+    status: 'closed' as const,
   },
   {
     projectName: 'Villa - احمد يسلم عوض سالم',
