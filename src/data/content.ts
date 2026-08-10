@@ -109,6 +109,7 @@ export const PROJECTS = [
     image: IMAGES.villa2,
     featured: false,
   },
+  
   {
     title: 'Modern Private Villa',
     location: 'Al Shamkhah, UAE',
@@ -118,17 +119,6 @@ export const PROJECTS = [
     image: IMAGES.villa5,
     featured: false,
   }
-  
-   {
-    title: 'Private Villa',
-    location: 'Al Shawamekh, UAE',
-    type: 'Residential Villa',
-    services: ['Architectural Design', 'Structural', 'Site Supervision','MEP'],
-    status: 'In Progress',
-    image: IMAGES.villa3,
-    featured: false,
-  },
- 
    {
     title: 'Khalifa City Mosque',
     location: 'Abu Dhabi, UAE',
