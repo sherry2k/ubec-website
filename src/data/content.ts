@@ -125,7 +125,7 @@ export const PROJECTS = [
     type: 'Residential Villa',
     services: ['Architectural Design','Structural', 'Site Supervision', 'MEP'],
     status: 'In Progress',
-    image: IMAGES.villa4,
+    image: IMAGES.villa3,
     featured: false,
   },
    {
