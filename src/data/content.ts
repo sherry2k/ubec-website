@@ -118,8 +118,18 @@ export const PROJECTS = [
     status: 'In Progress',
     image: IMAGES.villa5,
     featured: false,
-  }
+  },
+  {
+    title: 'Private Villa',
+    location: 'Al Shawamekh, UAE',
+    type: 'Residential Villa',
+    services: ['Architectural Design','Structural', 'Site Supervision', 'MEP'],
+    status: 'In Progress',
+    image: IMAGES.villa4,
+    featured: false,
+  },
    {
+  
     title: 'Khalifa City Mosque',
     location: 'Abu Dhabi, UAE',
     type: 'Mosque',
@@ -127,6 +137,7 @@ export const PROJECTS = [
     status: 'In Progress',
     image: IMAGES.mosque1,
     featured: true,
+      
   },
    {
     title: 'Liwa City Mosque',
