@@ -214,7 +214,7 @@ export const TENDERS = [
     description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: 'https://we.tl/t-GD1Hv3GqZaEyHxpN',
     image: IMAGES.tender2,
-    status: 'open' as const,
+    status: 'closed' as const,
   },
   {
    projectName: 'Villa - احمد عبيد سعيد الشميلى',
