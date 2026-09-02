@@ -119,6 +119,17 @@ body {
   transform: scale(1.08);
 }
 
+
+/* Bell ring animation for tender alert */
+@keyframes ring {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-12deg); }
+  30% { transform: rotate(8deg); }
+  40% { transform: rotate(-5deg); }
+  50% { transform: rotate(2deg); }
+}
+
 /* Text selection */
 ::selection {
   background: rgba(94, 158, 58, 0.2);
