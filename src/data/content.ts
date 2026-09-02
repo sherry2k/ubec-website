@@ -197,14 +197,14 @@ export const PROJECTS = [
 
 export const TENDERS = [
   {
-    projectName: 'Villa Extension  - خليفه محمد حمدان بالطويل المنصوري',
+    projectName: 'Villa  - عمر راشد سالم خميس القبيىسى',
     title: 'Residential Private Villa',
-    location: 'Al Falah, Abu Dhabi',
-    submissionDate: '2026-08-02',
-    description: 'Villa Extension at Ground Floor & First Floor',
-    drawingsLink: 'https://khaledeng1.wetransfer.com/downloads/c811ed4d78674197bd944db053c63ab620260726091203/e8acf6?t_exp=1816593124&t_lsid=a2688308-e81a-464e-bebd-4cf49e68af26&t_network=link&t_rid=YXV0aDB8VHJhbnNmZXJ8cThncXNxajhiZDl6Z3E=&t_s=download_link&t_ts=1785057124',
+    location: 'Madinat Al Riyad, Abu Dhabi',
+    submissionDate: '2026-09-09',
+    description: 'Construction of New Residential Villa G+2 and Boundarywall',
+    drawingsLink: 'https://we.tl/t-uBxYifrrJCRYQyaR',
     image: IMAGES.tender1,
-    status: 'closed' as const,
+    status: 'open' as const,
   },
   {
     projectName: 'Villa - احمد يسلم عوض سالم',
