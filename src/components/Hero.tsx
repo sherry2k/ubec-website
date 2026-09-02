@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronDown } from 'lucide-react';
-import { IMAGES } from '@/data/content';
+import { ArrowRight, ChevronDown, Bell } from 'lucide-react';
+import { IMAGES, TENDERS } from '@/data/content';
 import { useScrollAnimation, useCountUp } from '@/hooks/useScrollAnimation';
 
 const stats = [
@@ -69,7 +69,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-4"
           >
             <div className="w-2 h-2 bg-brand rounded-full animate-pulse" />
             <span className="text-white/80 text-xs sm:text-sm font-medium tracking-wide">
@@ -118,6 +118,26 @@ export default function Hero() {
             >
               View Projects
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </motion.div>
+
+          {/* New Tender Alert */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
+            className="mt-4"
+          >
+            <a
+              href="#tenders"
+              className="group inline-flex items-center gap-2.5 text-brand-light/90 hover:text-brand-light transition-colors"
+            >
+              <Bell className="w-4 h-4" style={{ animation: 'ring 2s ease-in-out infinite' }} />
+              <span className="text-sm font-medium">
+                New Tender Alert — <span className="text-white/70">{TENDERS.find(t => t.status !== 'closed')?.title || 'Check our latest tenders'}</span>
+              </span>
+              <span className="px-2 py-0.5 bg-brand/20 text-brand-light text-[10px] font-bold rounded-full border border-brand/30 uppercase">New</span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
         </div>
