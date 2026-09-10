@@ -26,10 +26,17 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
-        <div className={`absolute top-4 right-4 px-3 py-1.5 text-white text-xs font-semibold rounded-full ${
-          tender.status === 'closed' ? 'bg-gray-accent' : 'bg-brand'
-        }`}>
-          {tender.status === 'closed' ? 'Bidding Closed' : 'Open for Bidding'}
+          <div className="absolute top-4 right-4 flex items-center gap-2">
+          {tender.isNew && tender.status !== 'closed' && (
+            <span className="px-2.5 py-1 bg-white text-brand text-[10px] font-bold rounded-full uppercase tracking-wide animate-pulse">
+              New
+            </span>
+          )}
+          <span className={`px-3 py-1.5 text-white text-xs font-semibold rounded-full ${
+            tender.status === 'closed' ? 'bg-gray-accent' : 'bg-brand'
+          }`}>
+            {tender.status === 'closed' ? 'Bidding Closed' : 'Open for Bidding'}
+          </span>
         </div>
         <div className="absolute bottom-4 left-4 right-4">
           <h3 className="text-white font-bold text-xl">{tender.title}</h3>
