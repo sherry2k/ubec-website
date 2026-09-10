@@ -33,8 +33,10 @@ function StatCounter({ value, suffix, label, delay }: { value: number; suffix: s
 }
 
 export default function Hero() {
+  // Find the newest tender marked with isNew: true (must also be open for bidding)
+  const newTender = TENDERS.find(t => t.isNew && t.status !== 'closed');
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden">">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -142,7 +144,7 @@ export default function Hero() {
             </a>
           </motion.div>
           )}
-       
+        </div>
 
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-3xl">
