@@ -121,25 +121,27 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* New Tender Alert */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-            className="mt-4"
-          >
-            <a
-              href="#tenders"
-              className="group inline-flex items-center gap-2.5 text-brand-light/90 hover:text-brand-light transition-colors"
+           {/* New Tender Alert — only shows when a tender has isNew: true */}
+          {newTender && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+              className="mt-4"
             >
-              <Bell className="w-4 h-4" style={{ animation: 'ring 2s ease-in-out infinite' }} />
-              <span className="text-sm font-medium">
-                New Tender Alert — <span className="text-white/70">{TENDERS.find(t => t.status !== 'closed')?.title || 'Check our latest tenders'}</span>
-              </span>
-              <span className="px-2 py-0.5 bg-brand/20 text-brand-light text-[10px] font-bold rounded-full border border-brand/30 uppercase">New</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              <a
+                href="#tenders"
+                className="group inline-flex items-center gap-2.5 text-brand-light/90 hover:text-brand-light transition-colors"
+              >
+                <Bell className="w-4 h-4 animate-bell-ring" />
+                <span className="text-sm font-medium">
+                  New Tender Alert — <span className="text-white/70">{newTender.title}</span>
+                </span>
+                <span className="px-2 py-0.5 bg-brand/20 text-brand-light text-[10px] font-bold rounded-full border border-brand/30 uppercase">New</span>
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
+          )}
         </div>
 
         {/* Stats */}
