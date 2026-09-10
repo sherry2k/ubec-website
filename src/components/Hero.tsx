@@ -142,7 +142,7 @@ export default function Hero() {
             </a>
           </motion.div>
           )}
-        </div>
+       
 
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-3xl">
