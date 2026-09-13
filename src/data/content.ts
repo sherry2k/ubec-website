@@ -200,7 +200,7 @@ export const TENDERS = [
     projectName: 'Villa  - عمر راشد سالم خميس القبيىسى',
     title: 'Residential Private Villa',
     location: 'Madinat Al Riyad, Abu Dhabi',
-    submissionDate: '2026-09-09',
+    submissionDate: '2026-09-13',
     description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: 'https://we.tl/t-uBxYifrrJCRYQyaR',
     image: IMAGES.tender1,
