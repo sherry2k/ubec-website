@@ -26,7 +26,7 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
-          <div className="absolute top-4 right-4 flex items-center gap-2">
+        <div className="absolute top-4 right-4 flex items-center gap-2">
           {tender.isNew && tender.status !== 'closed' && (
             <span className="px-2.5 py-1 bg-white text-brand text-[10px] font-bold rounded-full uppercase tracking-wide animate-pulse">
               New
@@ -55,7 +55,6 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
         <p className="text-gray-body text-sm leading-relaxed mb-6">{tender.description}</p>
 
         <div className="space-y-3">
-          <p className="text-sm font-medium text-[#2d7112] uppercase tracking-wide">{tender.projectName}</p>
           <div className="flex items-center gap-3 text-sm">
             <MapPin className="w-4 h-4 text-brand shrink-0" />
             <span className="text-charcoal font-medium">{tender.location}</span>
@@ -86,7 +85,13 @@ function TenderCard({ tender, index, onImageClick }: { tender: typeof TENDERS[0]
                 <Download className="w-4 h-4" />
                 Download Drawings
               </a>
-             
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-charcoal/5 text-charcoal text-sm font-semibold rounded-xl hover:bg-charcoal/10 transition-all"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Submit Bid
+              </a>
             </>
           )}
         </div>
