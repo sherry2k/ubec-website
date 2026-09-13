@@ -204,7 +204,8 @@ export const TENDERS = [
     description: 'Construction of New Residential Villa G+2 and Boundarywall',
     drawingsLink: 'https://we.tl/t-uBxYifrrJCRYQyaR',
     image: IMAGES.tender1,
-    status: 'closed' as const,
+    status: 'open' as const,
+    isNew: true,
   },
   {
     projectName: 'Villa - على محمد على ابراهيم المنصورى',
@@ -215,6 +216,7 @@ export const TENDERS = [
     drawingsLink: 'https://we.tl/t-M5KRAY4iRwkXuAbg',
     image: IMAGES.tender2,
     status: 'closed' as const,
+    isNew: false,
   },
   {
    projectName: 'Villa - احمد يسلم عوض سالم',
@@ -225,6 +227,7 @@ export const TENDERS = [
     drawingsLink: 'https://we.tl/t-GD1Hv3GqZaEyHxpN',
     image: IMAGES.tender3,
     status: 'closed' as const,
+    isNew: false,
   },
 ];
 
