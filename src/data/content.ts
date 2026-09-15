@@ -211,11 +211,11 @@ export const TENDERS = [
     projectName: 'Villa - على محمد على ابراهيم المنصورى',
     title: 'Residential Private Villa',
     location: 'Madinat Al Riyad, Abu Dhabi',
-    submissionDate: '2026-09-09',
+    submissionDate: '2026-09-15',
     description: 'Construction of New Residential Villa G+2, Majlis Building, Driver Room Block and Boundarywall',
     drawingsLink: 'https://we.tl/t-M5KRAY4iRwkXuAbg',
     image: IMAGES.tender2,
-    status: 'closed' as const,
+    status: 'open' as const,
     isNew: false,
   },
   {
