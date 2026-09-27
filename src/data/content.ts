@@ -200,7 +200,7 @@ export const TENDERS = [
     projectName: 'Villa  - سعيد محمد طريم العامري',
     title: 'Residential Private Villa',
     location: 'Madinat Zayed - Al Dhafra Region, Abu Dhabi',
-    submissionDate: '2026-09-15',
+    submissionDate: '2026-10-05',
     description: 'Construction of New Villa G+2, Service Block, Majlis and Boundarywall',
     drawingsLink: 'https://we.tl/t-6eochpMXVRy9Cbya',
     image: IMAGES.tender1,
