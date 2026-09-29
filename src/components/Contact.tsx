@@ -16,9 +16,9 @@ const COMPANY_INFO = {
   address: ['Abu Dhabi, United Arab Emirates', 'Office# 406, SJ Tower, Airport Road'],
   phones: ['+971 2 671 7121 ', '+971 50 275 3085'],
   emails: ['ubec27530@gmail.com'],
-  hours: ['Sun–Thu: 9:00 AM – 6:00 PM', 'Fri–Sat: Closed'],
+  hours: ['Sun–Thu: 9:00 AM – 6:30 PM', 'Fri–Sat: Closed'],
   whatsapp: '971502753085', // Number without + or spaces
-  googleMapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.976707319262!2d54.3760259759128!3d24.45938666118818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67c6c53963b9%3A0xc0cd3c6978682d1f!2suniversal%20building%20engineering%20consultants!5e1!3m2!1sen!2sae!4v1783513489291!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
+  googleMapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.976707319262!2d54.3760259759128!3d24.45938666118818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67c6c53963b9%3A0xc0cd3c6978682d1f!2suniversal%20building%20engineering%20consultants!5e1!3m2!1sen!2sae!4v1783513489291!5m2!1sen!2sae',
 };
 
 // ============================================================
@@ -140,7 +140,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: -40 }}
             animate={headerVisible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-2 space-y-6"
+            className="lg:col-span-2 space-y-6 flex flex-col"
           >
             {contactInfo.map((item) => (
               <div key={item.title} className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-border/40 hover:border-brand/20 transition-all">
@@ -174,7 +174,7 @@ export default function Contact() {
             </a>
 
             {/* Map */}
-            <div className="rounded-2xl overflow-hidden border border-border/40 h-48">
+            <div className="rounded-2xl overflow-hidden border border-border/40 flex-1 min-h-[12rem]">
               <iframe
                 src={COMPANY_INFO.googleMapEmbed}
                 width="100%"

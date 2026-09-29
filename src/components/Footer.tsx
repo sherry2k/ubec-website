@@ -58,7 +58,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-charcoal relative overflow-hidden">
+    <footer className="bg-charcoal relative">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 w-96 h-48 bg-brand/5 rounded-full blur-[100px] -translate-x-1/2" />
