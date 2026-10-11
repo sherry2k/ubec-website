@@ -204,8 +204,8 @@ export const TENDERS = [
     description: 'Construction of New Villa G+2, Service Block, Majlis and Boundarywall',
     drawingsLink: 'https://we.tl/t-6eochpMXVRy9Cbya',
     image: IMAGES.tender1,
-    status: 'open' as const,
-    isNew: true,
+    status: 'closed' as const,
+    isNew: false,
   },
   {
      projectName: 'Majlis  - عبدالله سالم حسن الحوسنى',
@@ -215,8 +215,8 @@ export const TENDERS = [
     description: 'Construction of New Majlis Block',
     drawingsLink: 'https://we.tl/t-OZ8vnQ0E8KwKxbij',
     image: IMAGES.tender2,
-    status: 'open' as const,
-    isNew: true,
+    status: 'closed' as const,
+    isNew: false,
   },
   {
    projectName: 'Villa - على محمد على ابراهيم المنصورى',
