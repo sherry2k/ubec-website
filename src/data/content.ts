@@ -199,7 +199,7 @@ export const TENDERS = [
   {
     projectName: 'Rest House',
     title: 'Residential Rest House',
-    location: 'Madinat Zayed - Al Dhafra Region, Abu Dhabi',
+    location: 'Seih Alkhair - Liwa - Al Dhafra Region, Abu Dhabi',
     submissionDate: '2026-11-05',
     description: 'Construction of Rest House, 2 Service Block, Elec. Room & Boundarywall',
     drawingsLink: 'https://we.tl/t-px1FnKTBOKNciDtG',
