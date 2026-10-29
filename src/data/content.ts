@@ -202,7 +202,7 @@ export const TENDERS = [
     location: 'Al Shahmah Old - Al Bahyah - Abu Dhabi',
     submissionDate: '2026-11-10',
     description: 'Construction of Villa, Driver Room & Boundarywall',
-    drawingsLink: 'https://we.tl/t-px1FnKTBOKNciDtG',
+    drawingsLink: 'https://we.tl/t-TgpVs09GmhMz5gTS',
     image: IMAGES.tender1,
     status: 'open' as const,
     isNew: true,
