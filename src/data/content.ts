@@ -205,7 +205,7 @@ export const TENDERS = [
     drawingsLink: 'https://we.tl/t-9wFQMgNnkqtd5HOD',
     image: IMAGES.tender1,
     status: 'open' as const,
-    isNew: new,
+    isNew: true,
   },
   {
      projectName: 'Residential Villa',
