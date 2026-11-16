@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronDown, Bell } from 'lucide-react';
-import { IMAGES, TENDERS } from '@/data/content';
+import { ArrowRight, ArrowUpRight, ChevronDown, Bell, PenTool } from 'lucide-react';
+import { IMAGES, TENDERS, DESIGN_HUB_URL } from '@/data/content';
 import { useScrollAnimation, useCountUp } from '@/hooks/useScrollAnimation';
 
 const stats = [
@@ -106,8 +106,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-10 inline-flex flex-col gap-4 max-w-full"
           >
+            <div className="flex flex-wrap gap-4">
             <a
               href="#tenders"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-brand text-white font-semibold rounded-2xl hover:bg-brand-dark transition-all hover:shadow-2xl hover:shadow-brand/30 text-sm sm:text-base"
@@ -121,6 +122,24 @@ export default function Hero() {
             >
               View Projects
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+            </div>
+
+            {/* Design Hub — opens the external Design Hub site */}
+            <a
+              href={DESIGN_HUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-3.5 h-[60px] sm:h-16 pl-2.5 sm:pl-3 pr-4 sm:pr-5 rounded-2xl border border-brand-light/35 bg-brand/10 backdrop-blur-sm text-white hover:bg-brand/20 hover:border-brand-light/60 transition-all"
+            >
+              <span className="w-10 h-10 shrink-0 rounded-xl bg-brand-light/20 border border-brand-light/35 flex items-center justify-center">
+                <PenTool className="w-[18px] h-[18px] text-brand-light" />
+              </span>
+              <span className="flex flex-col gap-0.5 flex-1 text-left">
+                <span className="text-[15px] sm:text-base font-semibold leading-tight">Design Hub</span>
+                <span className="text-xs text-white/70">Opens in a new tab</span>
+              </span>
+              <ArrowUpRight className="w-[18px] h-[18px] text-brand-light transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </motion.div>
 

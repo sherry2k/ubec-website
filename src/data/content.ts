@@ -393,3 +393,6 @@ export const NAV_LINKS = [
   { label: 'Process', href: '#process' },
   { label: 'Contact', href: '#contact' },
 ];
+
+// Design Hub — external site opened from the header, mobile menu and hero buttons.
+export const DESIGN_HUB_URL = 'https://universal-design-hub.khaledeng1.chatgpt.site';
