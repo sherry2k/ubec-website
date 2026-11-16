@@ -8,8 +8,8 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 //   Upload to public/images/about/ and use '/images/about/...'
 // ============================================================
 const ABOUT_IMAGES = {
-  // Main: Detailed architectural floor plan / drawing
-  main: '/images/about/about.png',
+  // Main: UBEC office reception (real photo)
+  main: '/images/about/ubec-reception.jpg',
   // Secondary: 3D rendered modern villa exterior
   secondary: '/images/about/about-1.jpg',
 };
@@ -45,8 +45,8 @@ export default function About() {
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src={ABOUT_IMAGES.main}
-                  alt="Architectural floor plan and design drawings"
-                  className="w-full h-80 sm:h-96 object-cover"
+                  alt="UBEC office reception with the Universal Building Engineering Consultants logo wall"
+                  className="w-full h-80 sm:h-96 object-cover object-center"
                 />
               </div>
               <div className="absolute -bottom-8 -right-4 sm:-right-8 w-48 sm:w-56 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
