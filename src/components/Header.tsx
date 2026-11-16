@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone } from 'lucide-react';
-import { NAV_LINKS } from '@/data/content';
+import { Menu, X, Phone, PenTool, ArrowUpRight } from 'lucide-react';
+import { NAV_LINKS, DESIGN_HUB_URL } from '@/data/content';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -97,7 +97,7 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <a
                 href="tel:+971502753085"
-                className={`hidden md:flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-medium transition-all ${
+                className={`hidden md:flex lg:hidden 2xl:flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-medium transition-all ${
                   isScrolled
                     ? 'text-charcoal hover:text-brand'
                     : 'text-white/80 hover:text-white'
@@ -105,6 +105,20 @@ export default function Header() {
               >
                 <Phone className="w-3.5 h-3.5" />
                 +971 50 2753085
+              </a>
+              <a
+                href={DESIGN_HUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group hidden lg:flex items-center gap-2 h-9 px-4 rounded-xl border text-[13px] font-semibold whitespace-nowrap transition-all ${
+                  isScrolled
+                    ? 'border-brand/35 bg-brand/5 text-brand-dark hover:border-brand hover:bg-brand/10 hover:shadow-lg hover:shadow-brand/20'
+                    : 'border-white/30 bg-white/10 backdrop-blur-md text-white hover:border-white/50 hover:bg-white/20'
+                }`}
+              >
+                <PenTool className={`w-[15px] h-[15px] ${isScrolled ? 'text-brand' : 'text-brand-light'}`} />
+                Design Hub
+                <ArrowUpRight className="w-3 h-3 opacity-70 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
               </a>
               <button
                 onClick={() => handleNavClick('#contact')}
@@ -153,7 +167,18 @@ export default function Header() {
                 </motion.button>
               ))}
             </nav>
-            <div className="mt-8 pt-8 border-t border-border">
+            <div className="mt-8 pt-8 border-t border-border flex flex-col gap-3">
+              <a
+                href={DESIGN_HUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full py-4 flex items-center justify-center gap-2.5 border-[1.5px] border-brand/40 bg-brand/5 text-brand-dark font-semibold rounded-2xl hover:bg-brand/10 transition-all"
+              >
+                <PenTool className="w-[18px] h-[18px] text-brand" />
+                Design Hub
+                <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
+              </a>
               <button
                 onClick={() => handleNavClick('#contact')}
                 className="w-full py-4 bg-brand text-white font-semibold rounded-2xl hover:bg-brand-dark transition-all"
