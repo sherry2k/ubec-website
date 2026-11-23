@@ -225,7 +225,7 @@ export const TENDERS = [
     submissionDate: '2026-11-25',
     description: 'Construction of New Villa G+2, Service Block, Majlis and Boundarywall',
     drawingsLink: 'https://we.tl/t-9wFQMgNnkqtd5HOD',
-    image: IMAGES.tender2,
+    image: IMAGES.tender3,
     status: 'open' as const,
     isNew: true,
   },
