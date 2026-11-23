@@ -200,7 +200,7 @@ export const TENDERS = [
     projectName: 'Villa  - فاطمه محمد المنهالى',
     title: 'Residential Private Villa',
     location: 'Madinat Zayed - Al Dhafra Region, Abu Dhabi',
-    submissionDate: '2026-11-20',
+    submissionDate: '2026-12-01',
     description: 'Construction of New Villa G+2, Majlis and Boundarywall',
     drawingsLink: 'https://we.tl/t-uvA8qrzTsPML7BJn',
     image: IMAGES.tender1,
